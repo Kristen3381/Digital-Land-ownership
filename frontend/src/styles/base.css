@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('./variables.css'); /* Import your variables */
+
+/* Reset basic browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--color-text-dark);
+  /* background-color: var(--color-background); /* Remove or comment this out */
+
+  /* --- GIF Background Styling --- */
+  background-image: url('/public/earth-2768.gif'); /* <-- IMPORTANT: Replace 'my-background.gif' with your actual GIF's filename */
+  background-size:contain; /* Ensures the GIF covers the entire background */
+  background-position:cover; /* Centers the GIF */
+  background-repeat: no-repeat; /* Prevents the GIF from repeating */
+  background-attachment: fixed; /* Makes the background fixed while content scrolls */
+  background-color: var(coral); /* Fallback color if GIF fails to load */
+  /* -------------------------------- */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Base form styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  font-family: var(--font-body);
+  color: var(--color-text-dark);
+  background-color: var(--color-text-light);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(var(--color-primary-rgb), 0.2);
+}
+
+/* Basic container for pages */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+}

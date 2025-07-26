@@ -1,0 +1,30 @@
+:root {
+  /* Color Palette (Refreshed) */
+  --color-primary: hsl(342, 80%, 27%); /* Vibrant Blue - Professional & Techy */
+  --color-primary-rgb: 0, 123, 255; /* RGB values for primary color, used for shadows */
+
+  --color-secondary: #e9ecef; /* Light Gray/Off-White - Clean backgrounds for sections/cards */
+  --color-accent: #c5740a; /* Bright Yellow/Amber - For highlights, active states, warnings */
+
+  --color-text-dark: #212529; /* Dark Charcoal - For main body text, strong contrast */
+  --color-text-light: #ffffff; /* Pure White - For text on dark backgrounds */
+  --color-background: #f583dc; /* Very Light Gray - Overall page background, soft and clean */
+  --color-border: #ced4da; /* Medium Gray - For borders, subtle separation */
+
+  --color-success: #28a745; /* Standard Green - For success messages/actions */
+  --color-error: #dc3545; /* Standard Red - For error messages/actions */
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Roboto', sans-serif;
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  /* Border Radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+}

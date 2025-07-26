@@ -1,0 +1,57 @@
+.adminContainer {
+  max-width: 1000px;
+  margin: var(--spacing-xl) auto;
+  padding: var(--spacing-xl);
+  background-color: var(--color-text-light);
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-border);
+}
+
+.title {
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  font-size: 2rem;
+}
+
+.actionHeader {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: var(--spacing-md);
+}
+
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--spacing-lg);
+}
+
+.userTable th,
+.userTable td {
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-md);
+  text-align: left;
+}
+
+.userTable th {
+  background-color: var(--color-secondary); /* Lavender header */
+  color: var(--color-text-dark);
+  font-weight: 600;
+}
+
+.userTable tbody tr:nth-child(even) {
+  background-color: color-mix(in srgb, var(--color-background) 90%, var(--color-text-light)); /* Subtle zebra striping */
+}
+
+.actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+}
+
+.actionButton {
+  min-width: unset; /* Override button min-width for table actions */
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: 0.85rem;
+}

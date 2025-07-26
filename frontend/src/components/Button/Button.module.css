@@ -1,0 +1,48 @@
+.button {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease, transform 0.2s ease;
+  min-width: 120px; /* Consistent width */
+  cursor: pointer;
+  border: none;
+}
+
+.button:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 80%, black); /* Slightly darker on hover */
+  transform: translateY(-2px); /* Gentle lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buttonPrimary {
+  /* Already set by .button */
+}
+
+.buttonSecondary {
+  background-color: var(--color-secondary);
+  color: var(--color-text-dark);
+  border: 1px solid var(--color-border);
+}
+
+.buttonSecondary:hover {
+  background-color: color-mix(in srgb, var(--color-secondary) 80%, var(--color-primary));
+  color: var(--color-text-light);
+}
+
+.buttonDanger {
+  background-color: var(--color-error);
+  color: var(--color-text-light);
+}
+
+.buttonDanger:hover {
+  background-color: color-mix(in srgb, var(--color-error) 80%, black);
+}

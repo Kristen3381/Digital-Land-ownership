@@ -1,0 +1,7 @@
+.mapContainer {
+  height: 400px; /* Default height */
+  width: 100%;
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for feminine touch */
+  overflow: hidden; /* Ensures rounded corners are applied */
+}

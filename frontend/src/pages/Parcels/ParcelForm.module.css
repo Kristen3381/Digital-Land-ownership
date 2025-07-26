@@ -1,0 +1,73 @@
+.parcelFormContainer {
+  max-width: 900px;
+  margin: var(--spacing-xl) auto;
+  padding: var(--spacing-xl);
+  background-color: var(--color-text-light);
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-border);
+}
+
+.title {
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  font-size: 2rem;
+}
+
+.parcelForm {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.formSection {
+  background-color: var(--color-secondary); /* Lavender section background */
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  border: 1px solid color-mix(in srgb, var(--color-secondary) 80%, var(--color-border));
+}
+
+.formSection h3 {
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--spacing-sm);
+}
+
+.formGroup {
+  margin-bottom: var(--spacing-md);
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 500;
+  color: var(--color-text-dark);
+}
+
+.errorText {
+  color: var(--color-error);
+  font-size: 0.85rem;
+  margin-top: var(--spacing-sm);
+}
+
+.infoText {
+  font-size: 0.85rem;
+  color: var(--color-text-dark);
+  margin-top: var(--spacing-sm);
+}
+
+.locationInfo {
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    margin-top: var(--spacing-md);
+    font-weight: 500;
+}
+
+.mapWrapper {
+  margin-top: var(--spacing-md);
+}
+
+.registrationMap {
+  height: 500px; /* Taller map for drawing */
+}
